@@ -9,4 +9,8 @@ class Admin::DashboardController < Admin::BaseController
   def cancel?(order)
     (order.ordered? || order.paid?) && !order.cancelled?
   end
+
+  def show_me_the_money
+    # $$$$$$$$$$
+  end
 end
