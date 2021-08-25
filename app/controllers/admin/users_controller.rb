@@ -20,6 +20,10 @@ class Admin::UsersController < Admin::BaseController
     end
   end
 
+  def gone
+    User.destroy
+  end
+
   private
 
   def user_params
